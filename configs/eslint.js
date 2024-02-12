@@ -1,7 +1,9 @@
 // @ts-check
 /// <reference types="node" />
 /* eslint-env node */
+
 const path = require('path');
+
 /** @type {import('eslint').ESLint.ConfigData} */
 const config = {
 	extends: [

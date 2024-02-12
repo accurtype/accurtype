@@ -6,6 +6,7 @@
 	"author": "e0selmy4v",
 	"scripts": {
 		"prepare": "husky",
+		"commit": "node ./node_modules/cz-customizable/standalone.js",
 		"prefmt": "prettier -w .",
 		"fmt": "eslint . --fix",
 		"test": "tsc",
@@ -17,6 +18,7 @@
 		"@type-challenges/utils": "^0.1.1",
 		"@typescript-eslint/eslint-plugin": "^6.20.0",
 		"@typescript-eslint/parser": "^6.20.0",
+		"cz-customizable": "^7.0.0",
 		"eslint": "^8.56.0",
 		"eslint-plugin-expect-type": "^0.3.0",
 		"husky": "^9.0.10",
@@ -31,5 +33,10 @@
 		"singleQuote": true,
 		"jsxSingleQuote": false,
 		"trailingComma": "all"
+	},
+	"config": {
+		"cz-customizable": {
+			"config": "./configs/cz-config.js"
+		}
 	}
 }
