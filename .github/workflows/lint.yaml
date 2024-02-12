@@ -1,0 +1,57 @@
+name: Type Lint
+
+on:
+    push:
+        branches: ['master']
+    pull_request:
+        branches: ['master']
+
+permissions:
+    contents: write
+    pages: write
+    id-token: write
+
+env:
+    HUSKY: 0
+
+jobs:
+    StyleTest:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [16.x, 18.x, 20.x]
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - name: Init enviroument
+              run: |
+                  npm i pnpm -g
+                  rm -rf package-lock.json
+                  pnpm i
+                  pnpm i
+            - name: Test style
+              run: |
+                  pnpm test:lint
+    Lint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use Node.js 20.x
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 20.x
+            - name: Init enviroument
+              run: |
+                  npm i pnpm -g
+                  rm -rf package-lock.json
+                  pnpm i
+                  pnpm i
+            - name: Lint
+              run: |
+                  pnpm lint
+            - name: Test
+              run: |
+                  pnpm test

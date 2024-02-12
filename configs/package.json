@@ -1,0 +1,9 @@
+{
+	"private": true,
+	"license": "MIT",
+	"type": "commonjs",
+	"dependencies": {
+		"@types/eslint": "^8.56.0",
+		"@types/node": "^20.11.17"
+	}
+}
