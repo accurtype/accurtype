@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 export let n: any;
 export const cases = {
 	'@stylistic/array-bracket-newline'() {
