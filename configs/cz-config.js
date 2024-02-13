@@ -5,26 +5,6 @@
 const fs = require('fs');
 const packages = fs.readdirSync(__dirname + '/../packages');
 
-/**
- * 所有可能长度的排列
- * @template T
- * @param {Set<T>} s
- * @returns {Set<T[]>}
- */
-function allList(s) {
-	/** @type {Set<T[]>} */
-	let r = new Set([[]]);
-	s.forEach(k => {
-		/** @type {Set<T>} */
-		const b = new Set(s);
-		b.delete(k);
-		allList(b).forEach(n => r.add([k, ...n]));
-	});
-	return r;
-}
-
-allList(new Set(packages));
-
 const config = {
 	types: [
 		{ value: 'Init', name: 'Init		初始化' },
@@ -42,7 +22,6 @@ const config = {
 	scopes: packages.map(name => ({ name })),
 	allowCustomScopes: true,
 
-	subjectSeparator: ' - ',
 	allowTicketNumber: false,
 	isTicketNumberRequired: false,
 	// ticketNumberPrefix: 'TICKET-',
