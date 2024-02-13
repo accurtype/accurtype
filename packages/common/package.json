@@ -1,16 +1,21 @@
 {
-	"name": "@accurtype/base",
-	"version": "0.1.0",
-	"description": "精确类型～基本类型",
+	"name": "@accurtype/common",
+	"version": "0.0.1",
+	"description": "精确类型～通用工具",
 	"main": "./lib",
 	"module": "./lib",
 	"types": "./lib",
 	"scripts": {},
+	"dependencies": {
+		"@accurtype/internal": "workspace:^"
+	},
 	"keywords": [
 		"typescript",
 		"types",
-		"template",
-		"util"
+		"util",
+		"string",
+		"array",
+		"tuple"
 	],
 	"type": "commonjs",
 	"author": "e0selmy4v",
@@ -22,5 +27,5 @@
 	"bugs": {
 		"url": "https://github.com/accurtype/accurtype/issues"
 	},
-	"homepage": "https://github.com/accurtype/accurtype/blob/HEAD/packages/base#readme"
+	"homepage": "https://github.com/accurtype/accurtype/blob/HEAD/packages/common#readme"
 }
