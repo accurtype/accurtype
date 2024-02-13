@@ -1,2 +1,2 @@
 /* eslint-env node */
-module.exports = require('./configs/eslint');
+module.exports = require('./configs/eslint.style');

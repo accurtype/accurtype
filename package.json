@@ -9,9 +9,11 @@
 		"commit": "cz",
 		"prefmt": "prettier -w .",
 		"fmt": "eslint . --fix",
-		"test": "tsc",
 		"test:lint": "eslint test/style.ts --no-ignore --report-unused-disable-directives",
-		"lint": "eslint ."
+		"prelint": "prettier -c .",
+		"lint": "eslint .",
+		"pretest": "eslint -c ./configs/eslint.check.js .",
+		"test": "tsc"
 	},
 	"devDependencies": {
 		"@stylistic/eslint-plugin": "^1.6.0",
@@ -40,7 +42,7 @@
 			"config": "./configs/cz-config.js"
 		},
 		"commitizen": {
-		  "path": "node_modules/cz-customizable"
+			"path": "node_modules/cz-customizable"
 		}
 	}
 }

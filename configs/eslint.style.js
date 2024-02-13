@@ -6,20 +6,11 @@ const path = require('path');
 
 /** @type {import('eslint').ESLint.ConfigData} */
 const config = {
-	extends: [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/stylistic-type-checked',
-		'plugin:expect-type/recommended',
-	],
 	parser: '@typescript-eslint/parser',
 	plugins: [
-		'@typescript-eslint',
-		'eslint-plugin-expect-type',
 		'@stylistic',
 	],
 	rules: {
-		'no-unused-vars': 'warn',
-
 		'@stylistic/array-bracket-newline': ['error', 'consistent'],
 		'@stylistic/array-bracket-spacing': ['error', 'never'],
 		'@stylistic/array-element-newline': ['error', 'consistent'],
@@ -139,7 +130,6 @@ const config = {
 	root: true,
 	parserOptions: {
 		project: ['./tsconfig.json', './packages/*/tsconfig.json'],
-		// @ts-ignore
 		tsconfigRootDir: path.join(__dirname, '..'),
 	},
 };
