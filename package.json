@@ -9,10 +9,9 @@
 		"commit": "cz",
 		"prefmt": "prettier -w .",
 		"fmt": "eslint . --fix",
-		"test:lint": "eslint test/style.ts --no-ignore --report-unused-disable-directives",
-		"prelint": "prettier -c .",
+		"test:lint": "eslint -c configs/eslint.style.js test/style.ts --no-ignore --report-unused-disable-directives",
+		"prelint": "prettier .",
 		"lint": "eslint .",
-		"pretest": "eslint -c ./configs/eslint.check.js .",
 		"test": "tsc"
 	},
 	"devDependencies": {
