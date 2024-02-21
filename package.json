@@ -10,7 +10,7 @@
 		"prefmt": "prettier -w .",
 		"fmt": "eslint . --fix",
 		"test:lint": "eslint test/style.ts --no-eslintrc -c config/eslint.style.js --no-ignore --report-unused-disable-directives",
-		"prelint": "prettier .",
+		"prelint": "prettier -c .",
 		"lint": "eslint .",
 		"test": "tsc"
 	},
