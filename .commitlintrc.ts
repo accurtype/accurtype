@@ -1,2 +1,2 @@
-import config from './configs/commitlint';
+import config from './config/commitlint';
 export = config;
