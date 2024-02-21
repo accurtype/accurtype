@@ -1,6 +1,5 @@
 /**
  * 比较器
- * @version 0.1.2
  * @license MIT
  */
 declare module './compare';

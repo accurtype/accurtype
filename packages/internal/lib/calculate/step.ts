@@ -1,6 +1,5 @@
 /**
  * 步进器
- * @version 1.0.1
  * @license MIT
  */
 declare module './step';
@@ -28,6 +27,10 @@ type SteppedString<
 	);
 export type Stepped<D extends Direction, N extends number> = NumberOf<ReversedString<Zeroless<SteppedString<D, ReversedString<`0${N}`>>>>>;
 
+/**
+ * 数字递减
+ * @tags number, calc
+ */
 export type Decreased<N extends number> = Stepped<9, N>;
 namespace Test {
 	// $ExpectType 0
@@ -42,6 +45,10 @@ namespace Test {
 	export type SD = Decreased<190379910000>;
 }
 
+/**
+ * 数字递增
+ * @tags number, calc
+ */
 export type Increased<N extends number> = Stepped<0, N>;
 namespace Test {
 	// $ExpectType 1

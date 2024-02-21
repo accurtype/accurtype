@@ -1,6 +1,5 @@
 /**
  * 内部计算相关基本类型
- * @version 1.0.0
  * @license MIT
  */
 declare module './base';
