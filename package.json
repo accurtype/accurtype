@@ -12,7 +12,8 @@
 		"test:lint": "eslint test/style.ts --no-eslintrc -c config/eslint.style.js --no-ignore --report-unused-disable-directives",
 		"prelint": "prettier -c .",
 		"lint": "eslint .",
-		"test": "tsc"
+		"test": "tsc --noEmit",
+		"build": "tsc"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^18.6.1",

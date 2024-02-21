@@ -13,10 +13,7 @@
 		"alwaysStrict": true,
 		"noImplicitThis": true,
 		"noEmitOnError": true,
-		"declaration": true,
-		"allowJs": true,
-		"noEmit": true,
-		"checkJs": true
+		"declaration": true
 	},
-	"include": ["**/*.js", "**/*.ts", ".*.js", ".*.ts"]
+	"exclude": ["config/*"]
 }

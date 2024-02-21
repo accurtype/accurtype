@@ -129,7 +129,7 @@ const config = {
 	},
 	root: true,
 	parserOptions: {
-		project: ['./tsconfig.json', './packages/*/tsconfig.json'],
+		project: ['./tsconfig.json', './config/tsconfig.json'],
 		tsconfigRootDir: path.join(__dirname, '..'),
 	},
 };
