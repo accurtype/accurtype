@@ -2,12 +2,13 @@
 /// <reference types="node" />
 /* eslint-env node */
 
-const deepmerge = require('deepmerge');
-const style = require('./eslint.style');
+const path = require('path');
 
 /** @type {import('eslint').ESLint.ConfigData} */
-const config = deepmerge({
+const config = {
+	parser: '@typescript-eslint/parser',
 	extends: [
+		'accurtype-style',
 		'eslint:recommended',
 		'plugin:@typescript-eslint/stylistic-type-checked',
 		'plugin:expect-type/recommended',
@@ -17,5 +18,14 @@ const config = deepmerge({
 		'eslint-plugin-expect-type',
 	],
 	rules: { 'no-unused-vars': 'warn' },
-}, style);
+	root: true,
+	parserOptions: {
+		project: [
+			'./config/tsconfig.json',
+			'./packages/tsconfig.json',
+			'./utilities/*/tsconfig.json',
+		],
+		tsconfigRootDir: path.join(__dirname, '..'),
+	},
+};
 module.exports = config;

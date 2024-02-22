@@ -1,4 +1,4 @@
-name: Type Lint
+name: Type Lint & Test
 
 on:
     push:
@@ -15,27 +15,7 @@ env:
     HUSKY: 0
 
 jobs:
-    StyleTest:
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node-version: [16.x, 18.x, 20.x]
-        steps:
-            - uses: actions/checkout@v3
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
-              with:
-                  node-version: ${{ matrix.node-version }}
-            - name: Init enviroument
-              run: |
-                  npm i pnpm -g
-                  rm -rf package-lock.json
-                  pnpm i
-                  pnpm i
-            - name: Test style
-              run: |
-                  pnpm test:lint
-    Lint:
+    lint-and-test:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3

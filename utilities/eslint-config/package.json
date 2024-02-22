@@ -4,7 +4,8 @@
 	"description": "「精确类型」风格 ESLint 配置",
 	"main": "index.js",
 	"scripts": {
-		"test": "tsc"
+		"pretest": "tsc",
+		"test": "eslint test.ts --no-eslintrc -c test.eslint.js --report-unused-disable-directives"
 	},
 	"files": [
 		"index.js"
@@ -13,7 +14,10 @@
 		"@stylistic/eslint-plugin": "^1.6.0"
 	},
 	"devDependencies": {
-		"@types/eslint": "^8.56.2"
+		"@types/eslint": "^8.56.2",
+		"@types/node": "^20.11.19",
+		"eslint": "^8.56.0",
+		"eslint-config-accurtype-style": "workspace:^"
 	},
 	"peerDependencies": {
 		"eslint": ">=8.40.0"

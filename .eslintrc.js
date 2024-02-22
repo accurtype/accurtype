@@ -1,1 +1,1 @@
-module.exports = require('./config/eslint.check');
+module.exports = require('./config/eslint');
