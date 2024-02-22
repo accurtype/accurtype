@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json.schemastore.org/package",
 	"name": "@accurtype/calc",
 	"version": "0.0.1",
 	"description": "精确类型～运算相关",

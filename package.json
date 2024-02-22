@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json.schemastore.org/package",
 	"private": true,
 	"name": "accurtype",
 	"license": "MIT",

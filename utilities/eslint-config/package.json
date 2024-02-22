@@ -1,4 +1,5 @@
 {
+	"$schema": "https://json.schemastore.org/package",
 	"name": "eslint-config-accurtype-style",
 	"version": "0.1.0",
 	"description": "「精确类型」风格 ESLint 配置",
@@ -23,9 +24,12 @@
 		"eslint": ">=8.40.0"
 	},
 	"keywords": [
+		"eslint",
+		"eslintconfig",
+		"accurtype",
+		"styleguide",
 		"typescript",
-		"util",
-		"types"
+		"javascript"
 	],
 	"type": "commonjs",
 	"author": "e0selmy4v",
