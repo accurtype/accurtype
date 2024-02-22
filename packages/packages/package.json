@@ -1,0 +1,8 @@
+{
+	"private": true,
+	"name": "packages",
+	"scripts": {
+		"test": "tsc --noEmit",
+		"build": "tsc"
+	}
+}

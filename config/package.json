@@ -1,7 +1,11 @@
 {
 	"private": true,
+	"name": "config",
 	"license": "MIT",
 	"type": "commonjs",
+	"scripts": {
+		"test": "tsc"
+	},
 	"dependencies": {
 		"@types/eslint": "^8.56.0",
 		"@types/node": "^20.11.17",
