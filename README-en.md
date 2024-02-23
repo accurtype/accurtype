@@ -1,9 +1,9 @@
-# 精确类型
+# Accurate Type
 
 ![_Accurate Type_](./docs/logo/banner.svg)
 
 [![Type Lint](https://github.com/accurtype/accurtype/actions/workflows/lint.yaml/badge.svg)](https://github.com/accurtype/accurtype/actions/workflows/lint.yaml)
 
-简体中文 | [English](./README-en.md)
+[简体中文](./README.md) | English
 
-本项目包含各种类型编程工具，可让你的 TS 项目的类型更加准确。
+This project includes various types of programming tools that can make the your TS types more accurate.
