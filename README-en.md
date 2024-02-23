@@ -1,6 +1,4 @@
-# Accurate Type
-
-![_Accurate Type_](./docs/logo/banner.svg)
+# ![_Accurate Type_](./docs/logo/banner.svg)
 
 [![Type Lint](https://github.com/accurtype/accurtype/actions/workflows/lint.yaml/badge.svg)](https://github.com/accurtype/accurtype/actions/workflows/lint.yaml)
 

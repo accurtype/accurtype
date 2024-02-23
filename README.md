@@ -1,6 +1,4 @@
-# 精确类型
-
-![_Accurate Type_](./docs/logo/banner.svg)
+# ![精确类型](./docs/logo/banner.svg)
 
 [![Type Lint](https://github.com/accurtype/accurtype/actions/workflows/lint.yaml/badge.svg)](https://github.com/accurtype/accurtype/actions/workflows/lint.yaml)
 
