@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="no"?>
-<svg width="1600" height="1600" viewBox="0 0 1600 1600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="1800" height="1800" viewBox="0 0 1800 1800" version="1.1" xmlns="http://www.w3.org/2000/svg">
 	<rect x="-800" y="-800" width="3200" height="3200" fill="white" />
-	<path fill="#24292F" transform="rotate(180) translate(-1050,-1050)" d="M461 619L461 549L291 549L291 0L209 0L209 549L39 549L39 619L461 619Z" />
-	<path fill="#0550AE" transform="rotate(180) translate(-1550,-1050)" d="M141 255L458 124L435 55L49 219L49 290L435 454L458 385L141 255Z" />
-	<path fill="#0550AE" transform="rotate(180) translate(-550,-1050)" d="M49 385L72 454L458 290L458 219L72 55L49 124L366 255L49 385Z" />
+	<path fill="#24292F" transform="rotate(180) translate(-1150,-1200)" d="M461 619L461 549L291 549L291 0L209 0L209 549L39 549L39 619L461 619Z" />
+	<path fill="#0550AE" transform="rotate(180) translate(-1650,-1200)" d="M141 255L458 124L435 55L49 219L49 290L435 454L458 385L141 255Z" />
+	<path fill="#0550AE" transform="rotate(180) translate(-650,-1200)" d="M49 385L72 454L458 290L458 219L72 55L49 124L366 255L49 385Z" />
 </svg>
