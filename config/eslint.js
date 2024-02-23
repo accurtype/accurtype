@@ -23,6 +23,7 @@ const config = {
 		project: [
 			'./config/tsconfig.json',
 			'./packages/tsconfig.json',
+			'./docs/tsconfig.json',
 			'./utilities/*/tsconfig.json',
 		],
 		tsconfigRootDir: path.join(__dirname, '..'),
