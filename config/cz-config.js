@@ -5,6 +5,7 @@
 const fs = require('fs');
 const packages = [
 	...fs.readdirSync(__dirname + '/../packages'),
+	'docs',
 	...fs.readdirSync(__dirname + '/../utilities'),
 ].filter(n => ![
 	'packages',

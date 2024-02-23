@@ -2,7 +2,9 @@ packages:
     # 类型包和工具
     - 'packages/**'
     - 'utilities/**'
-    # 剔除测试
-    - '!**/test/**'
     # 隔离配置文件夹的依赖环境
     - 'config'
+    # 文档
+    - 'docs'
+    # 剔除测试
+    - '!**/test/**'
