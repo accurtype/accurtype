@@ -1,0 +1,26 @@
+{
+	"projectFolder": "..",
+	"enumMemberOrder": "preserve",
+	"dtsRollup": {
+		"enabled": true
+	},
+	"apiReport": {
+		"enabled": false
+	},
+	"docModel": {
+		"enabled": false
+	},
+	"tsdocMetadata": {
+		"enabled": false
+	},
+	"extractorMessageReporting": {
+		"default": {
+			"logLevel": "warning"
+		}
+	},
+	"tsdocMessageReporting": {
+		"default": {
+			"logLevel": "none"
+		}
+	}
+}
