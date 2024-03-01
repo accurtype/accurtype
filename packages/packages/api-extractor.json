@@ -1,0 +1,25 @@
+{
+	"projectFolder": ".",
+	"mainEntryPointFilePath": "export.d.ts",
+	"enumMemberOrder": "preserve",
+	"docModel": {
+		"enabled": true,
+		"apiJsonFilePath": "./export.api.json"
+	},
+	"dtsRollup": {
+		"enabled": false
+	},
+	"apiReport": {
+		"enabled": false
+	},
+	"tsdocMetadata": {
+		"enabled": false
+	},
+	"messages": {
+		"extractorMessageReporting": {
+			"ae-forgotten-export": {
+				"logLevel": "none"
+			}
+		}
+	}
+}
