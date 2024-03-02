@@ -1,4 +1,4 @@
-<center>
+<div align="center">
 
 ![精确类型](./docs/logo/banner.svg)
 
@@ -6,7 +6,7 @@ Funny TS utility types 〜 激动人心的工具类型
 
 [![Type Lint](https://github.com/accurtype/accurtype/actions/workflows/lint.yaml/badge.svg)](https://github.com/accurtype/accurtype/actions/workflows/lint.yaml)
 
-</center>
+</div>
 
 # 精确类型
 
