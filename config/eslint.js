@@ -17,7 +17,7 @@ const config = {
 		'@typescript-eslint',
 		'eslint-plugin-expect-type',
 	],
-	rules: { 'no-unused-vars': 'warn' },
+	rules: { 'no-unused-vars': 'off' },
 	root: true,
 	parserOptions: {
 		project: [
