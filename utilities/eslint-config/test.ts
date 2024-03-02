@@ -311,16 +311,35 @@ export const cases = {
 	},
 	'@stylistic/object-curly-newline'() {
 		n = {};
+		n = { a: 123 };
+		n = {
+			a: 123,
+		};
 		n = { a: 1, b: 2 };
 		n = {
 			a: 1,
 			b: 2,
 		};
-		n = { // eslint-disable-line @stylistic/object-curly-newline
-		}; // eslint-disable-line @stylistic/object-curly-newline
 		n = {
-			a: 1,
-			b: 2 }; // eslint-disable-line @stylistic/object-curly-newline
+			a: [
+				1,
+				2,
+				3,
+			],
+		};
+		/**@todo 想办法让下面这种情况报错 */
+		n = {
+		};
+		// eslint-disable-next-line @stylistic/object-curly-newline
+		n = {
+			a: 1 };
+		n = { a: 1,
+		}; // eslint-disable-line @stylistic/object-curly-newline
+		n = { a: [ // eslint-disable-line @stylistic/object-curly-newline
+			1,
+			2,
+			3,
+		] }; // eslint-disable-line @stylistic/object-curly-newline
 	},
 	'@stylistic/object-curly-spacing'() {
 		n = { a: 1, b: 2 };

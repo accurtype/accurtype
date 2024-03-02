@@ -67,7 +67,7 @@ const config = {
 		'@stylistic/no-trailing-spaces': 'error',
 		'@stylistic/no-whitespace-before-property': 'error',
 		'@stylistic/nonblock-statement-body-position': ['error', 'beside'],
-		'@stylistic/object-curly-newline': ['error', { multiline: true }],
+		'@stylistic/object-curly-newline': ['error', { multiline: true, consistent: true }],
 		'@stylistic/object-curly-spacing': ['error', 'always'],
 		'@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
 		'@stylistic/one-var-declaration-per-line': ['error', 'always'],
@@ -126,6 +126,6 @@ const config = {
 /**
  * 「精确类型」风格 ESLint 配置
  * @license MIT
- * @version 0.1.0
+ * @version 0.1.1
  */
 module.exports = config;
