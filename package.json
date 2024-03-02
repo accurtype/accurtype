@@ -26,6 +26,7 @@
 		"eslint": "^8.56.0",
 		"eslint-config-accurtype-style": "workspace:^",
 		"eslint-plugin-expect-type": "^0.3.0",
+		"eslint-plugin-markdown": "^3.0.1",
 		"husky": "^9.0.10",
 		"prettier": "^3.2.5",
 		"ts-node": "^10.9.2",

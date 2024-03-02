@@ -12,10 +12,12 @@ const config = {
 		'eslint:recommended',
 		'plugin:@typescript-eslint/stylistic-type-checked',
 		'plugin:expect-type/recommended',
+		'plugin:markdown/recommended',
 	],
 	plugins: [
 		'@typescript-eslint',
 		'eslint-plugin-expect-type',
+		'markdown',
 	],
 	rules: { 'no-unused-vars': 'warn' },
 	root: true,
@@ -28,5 +30,12 @@ const config = {
 		],
 		tsconfigRootDir: path.join(__dirname, '..'),
 	},
+	overrides: [
+		{
+			files: ['**/*.md/*'],
+			extends: 'plugin:@typescript-eslint/disable-type-checked',
+			rules: { 'expect-type/expect': 'off' },
+		},
+	],
 };
 module.exports = config;
