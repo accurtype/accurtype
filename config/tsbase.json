@@ -17,6 +17,7 @@
 		"declaration": true,
 		"resolveJsonModule": true,
 		"allowJs": true,
+		"skipLibCheck": true,
 		"checkJs": true
 	},
 	"include": []
