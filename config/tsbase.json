@@ -15,6 +15,7 @@
 		"noImplicitThis": true,
 		"noEmitOnError": true,
 		"declaration": true,
+		"resolveJsonModule": true,
 		"allowJs": true,
 		"checkJs": true
 	},

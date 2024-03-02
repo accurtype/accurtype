@@ -4,6 +4,13 @@
 	"name": "packages",
 	"scripts": {
 		"test": "tsc --noEmit",
-		"build": "tsc"
+		"gen-docs": "ts-node gen-docs"
+	},
+	"dependencies": {
+		"@accurtype/base": "workspace:^",
+		"@accurtype/calc": "workspace:^",
+		"@accurtype/common": "workspace:^",
+		"@accurtype/internal": "workspace:^",
+		"@microsoft/api-extractor": "^7.41.0"
 	}
 }

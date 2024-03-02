@@ -3,14 +3,12 @@
 /* eslint-env node */
 
 const fs = require('fs');
+const notPacks = require('packages/not-packs.json');
 const packages = [
 	...fs.readdirSync(__dirname + '/../packages'),
 	'docs',
 	...fs.readdirSync(__dirname + '/../utilities'),
-].filter(n => ![
-	'packages',
-	'tsconfig.json',
-].includes(n));
+].filter(n => !notPacks.includes(n));
 
 const config = {
 	types: [
