@@ -8,7 +8,7 @@ Funny TS utility types 〜 激动人心的工具类型
 
 </div>
 
-# 精确类型
+-----
 
 简体中文 | [English](./README-en.md)
 
