@@ -14,7 +14,8 @@
 		"prelint": "prettier -c .",
 		"lint": "eslint .",
 		"test": "pnpm -F config -F ./utilities/* -F packages test",
-		"build": "pnpm -F ./utilities/* -F packages test"
+		"prebuild": "pnpm lint",
+		"build": "pnpm -F ./utilities/* -F packages build"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^18.6.1",

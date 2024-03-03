@@ -3,6 +3,7 @@
 	"private": true,
 	"name": "packages",
 	"scripts": {
+		"build": "tsc",
 		"test": "tsc --noEmit",
 		"gen-docs": "ts-node gen-docs"
 	},
