@@ -5,8 +5,8 @@
 	"description": "「精确类型」风格 ESLint 配置",
 	"main": "index.js",
 	"scripts": {
-		"pretest": "tsc",
-		"test": "eslint test.ts --no-eslintrc -c test.eslint.js --report-unused-disable-directives"
+		"predry-test": "tsc",
+		"dry-test": "eslint test.ts --no-eslintrc -c test.eslint.js --report-unused-disable-directives"
 	},
 	"files": [
 		"index.js"

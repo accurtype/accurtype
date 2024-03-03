@@ -1,4 +1,4 @@
-name: Type Lint & Test
+name: Type Lint & Build & Test
 
 on:
     push:
@@ -32,6 +32,12 @@ jobs:
             - name: Lint
               run: |
                   pnpm lint
-            - name: Test
+            - name: Dry test
               run: |
-                  pnpm test
+                  pnpm dry-test
+            - name: Build
+              run: |
+                  pnpm build
+            - name: Wet Test
+              run: |
+                  pnpm wet-test

@@ -4,7 +4,7 @@
 	"name": "packages",
 	"scripts": {
 		"build": "tsc",
-		"test": "tsc --noEmit",
+		"dry-test": "tsc --noEmit",
 		"gen-docs": "ts-node gen-docs"
 	},
 	"dependencies": {
