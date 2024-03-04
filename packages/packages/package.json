@@ -3,8 +3,9 @@
 	"private": true,
 	"name": "packages",
 	"scripts": {
-		"build": "tsc",
 		"dry-test": "tsc --noEmit",
+		"build": "tsc",
+		"clear": "rimraf -g ../**/*.js ../**/*.d.ts ../**/*.js.map",
 		"gen-docs": "ts-node gen-docs"
 	},
 	"dependencies": {

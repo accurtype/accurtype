@@ -13,9 +13,12 @@
 		"prelint": "prettier -c .",
 		"lint": "eslint .",
 		"dry-test": "pnpm -F config -F ./utilities/* -F packages dry-test",
-		"prebuild": "pnpm lint",
 		"build": "pnpm -F ./utilities/* -F packages build",
-		"wet-test": "pnpm -F config -F ./utilities/* -F packages wet-test"
+		"wet-test": "pnpm -F config -F ./utilities/* -F packages wet-test",
+		"clear": "pnpm -F packages -F ./utilities/* clear",
+		"prepub": "pnpm build",
+		"pub": "pnpm publish -r --dry-run --no-git-checks",
+		"postpub": "pnpm clear"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^18.6.1",
@@ -30,6 +33,7 @@
 		"eslint-plugin-markdown": "^3.0.1",
 		"husky": "^9.0.10",
 		"prettier": "^3.2.5",
+		"rimraf": "^5.0.5",
 		"ts-node": "^10.9.2",
 		"typescript": "^4.8.4"
 	},
