@@ -16,6 +16,7 @@
 		"build": "pnpm -F ./utilities/* -F packages build",
 		"wet-test": "pnpm -F config -F ./utilities/* -F packages wet-test",
 		"clear": "pnpm -F packages -F ./utilities/* clear",
+		"ci": "pnpm lint & pnpm dry-test & pnpm build & pnpm wet-test & pnpm clear",
 		"prepub": "pnpm build",
 		"pub": "pnpm publish -r --dry-run --no-git-checks",
 		"postpub": "pnpm clear"
