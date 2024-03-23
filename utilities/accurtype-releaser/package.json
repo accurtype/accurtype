@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"name": "accurtype-releaser",
+	"version": "0.1.0",
+	"description": "「精确类型」自动发布工具",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"accurtype"
+	],
+	"type": "module",
+	"author": "e0selmy4v",
+	"license": "MIT",
+	"repository": {
+		"directory": "utilities/accurtype-releaser",
+		"type": "git",
+		"url": "git+https://github.com/accurtype/accurtype.git"
+	},
+	"bugs": {
+		"url": "https://github.com/accurtype/accurtype/issues"
+	},
+	"homepage": "https://github.com/accurtype/accurtype/blob/HEAD/utilities/accurtype-releaser#readme",
+	"dependencies": {
+		"@manypkg/get-packages": "^2.2.1",
+		"simple-git": "^3.23.0"
+	},
+	"devDependencies": {
+		"esm-entry": "^1.0.4"
+	}
+}
